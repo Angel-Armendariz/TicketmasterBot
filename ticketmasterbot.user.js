@@ -3,16 +3,14 @@
 // @namespace    http://tampermonkey.net/
 // @version      0.4
 // @description  Fast execution of reserving tickets in cart
-// @match        https://www1.ticketmaster.co.uk/*
-// @match        https://www1.ticketmaster.com/*
-// @match        https://www1.ticketmaster.ie/*
+// @match        https://www.ticketmaster.com/*
 // @require      https://code.jquery.com/jquery-2.1.3.min.js
 // @grant        none
 // ==/UserScript==
 
 
 var refreshIntervalSeconds=1; //Set this to how often you want to check for tickets (Note: Do this too fast and TicketMaster may block your ip address)
-var numberOfTickets=2; //Set this to the number of tickets you want
+var numberOfTickets=3; //Set this to the number of tickets you want
 
 function SkipPopup()
 {
